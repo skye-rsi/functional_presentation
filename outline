@@ -1,0 +1,47 @@
+Java Functional....
+
+Smalltalk
+    whats old is new again.
+    functional? no and nobody ever thinks of it that way.
+    blocks/closures, internal iterators
+
+    Conditionals
+    result := a > b
+        ifTrue:[ 'greater' ]
+        ifFalse:[ 'less or equal' ]
+
+    Loops:
+    1 to: 10 do:[ :i |
+        Transcript show:i.
+        Transcript show:' '.
+        Transcript show:i sqt.
+        Transcript cr.
+    ].
+
+    Blocks
+    aString := 'This is a string'.
+    vowels := aString select: [:aCharacter | aCharacter isVowel].
+
+    myArray := #('a' 'b' 'c' ).
+    myOperation := [:each |
+                       Transcript show: each.
+                       Transcript cr.
+                   ].
+    myArray do: myOperation.
+
+    OO is good for abstracting over data
+    FP style is good for abstracting over behavior.
+
+Java 8 'functional'
+    finally functions as first class citizens
+    lambdas/closures
+    SAM - single abstract method interface
+    lazy execution
+    internal iterators - avoid implementing loops
+    function generators
+    patterns:
+        lightweight strategy
+        decorator
+        fluent interfaces
+        execute around method pattern (from smalltalk)
+
